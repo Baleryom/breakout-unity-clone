@@ -19,10 +19,8 @@ public class GameOver : MonoBehaviour
         if (gameOver)
         {
              if(GUI.Button(new Rect(10, 10, 100, 20), "Play again"))
-            { 
-                SceneManager.LoadScene("Main");
-                wincon.TimeWinCondition
-                
+            {
+                SceneManager.LoadScene("Main");                
             }
             GUI.Label(new Rect(25, 35, 100, 20), $"Highscore : {PlayerPrefs.GetString("highscore")}");
 
